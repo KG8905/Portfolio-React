@@ -1,0 +1,82 @@
+:root {
+  --lightblue: #ADD8E6;
+  --darkgray: #393e46;
+  --darkblue: #00416A;
+}
+
+.background {
+  color: navy;
+}
+
+.container {
+  margin: 20px auto;
+  width: 100%;
+  height: 800px;
+  background-color: #F0F8FF;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  position: relative;
+}
+
+.box1, .box2, .box3, .box4, .box5 {
+  padding: 20px;
+  border-radius: 10px;
+  color: var(--darkblue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  filter: brightness(85%); /* Use standard filter property */
+  border: solid var(--lightblue);
+  border-radius: 0;
+  border-width: 5px;
+  position: relative;
+}
+
+.box1 {
+  background-image: url(../images/box1.jpg);
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.box2 {
+  background-image: url(../images/box2.jpg);
+}
+
+.box3 {
+  background-image: url(../images/box3.jpg);
+}
+
+.box4 {
+  background-image: url(../images/box4.jpg);
+}
+
+.box5 {
+  background-image: url(../images/box5.jpg);
+}
+
+.box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover {
+  filter: brightness(125%);
+}
+
+.container li {
+  background-color: var(--lightblue);
+  padding: 3%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  font-weight: bold;
+}
+
+.container h5 {
+  position: absolute;
+  left: 10px;
+  bottom: 0;
+  font-size: small;
+}
+
+ul {
+  list-style-type: none;
+}
